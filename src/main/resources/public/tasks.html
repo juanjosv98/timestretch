@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timestretch - Tasks</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Header -->
+<div class="header">
+    <div></div>
+    <h1>timestretch</h1>
+    <div class="menu-icon">☰</div>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="tasks-wrapper">
+        <!-- Left Column: Existing Tasks -->
+        <div class="column">
+            <h2 class="column-title">Bestehende</h2>
+
+            <div class="task-item">
+                <div class="task-header">
+                    <div class="task-title-wrapper">
+                        <span class="task-bullet">•</span>
+                        <span class="task-title">Email schreiben</span>
+                    </div>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="task-content">
+                    <div class="task-description">
+                        Wichtige E-Mail an den Kunden verfassen und versenden.
+                    </div>
+                    <div class="task-actions">
+                        <a href="/task/1/start" class="btn btn-primary">Starten</a>
+                        <a href="/task/1/edit" class="btn btn-secondary">Edit</a>
+                        <a href="/task/1/delete" class="btn btn-danger">Löschen</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-item">
+                <div class="task-header">
+                    <div class="task-title-wrapper">
+                        <span class="task-bullet">•</span>
+                        <span class="task-title">Kaffee holen</span>
+                    </div>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="task-content">
+                    <div class="task-description">
+                        Pause machen und Kaffee für das Team holen.
+                    </div>
+                    <div class="task-actions">
+                        <a href="/task/2/start" class="btn btn-primary">Starten</a>
+                        <a href="/task/2/edit" class="btn btn-secondary">Edit</a>
+                        <a href="/task/2/delete" class="btn btn-danger">Löschen</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-item">
+                <div class="task-header">
+                    <div class="task-title-wrapper">
+                        <span class="task-bullet">•</span>
+                        <span class="task-title">Chef telefonieren</span>
+                    </div>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="task-content">
+                    <div class="task-description">
+                        Rücksprache mit dem Chef halten über Projektfortschritt.
+                    </div>
+                    <div class="task-actions">
+                        <a href="/task/3/start" class="btn btn-primary">Starten</a>
+                        <a href="/task/3/edit" class="btn btn-secondary">Edit</a>
+                        <a href="/task/3/delete" class="btn btn-danger">Löschen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Running Tasks -->
+        <div class="column">
+            <h2 class="column-title">Laufend</h2>
+
+            <div class="task-item running-task">
+                <div class="task-header">
+                    <div class="task-title-wrapper">
+                        <span class="task-bullet">●</span>
+                        <span class="task-title">Arbeitsfeier organisieren</span>
+                    </div>
+                </div>
+                <div class="task-content">
+                    <div class="task-description">
+                        Planung und Organisation für die nächste Teamfeier.
+                    </div>
+                    <div class="timer">15:33</div>
+                    <div class="task-actions">
+                        <a href="/task/4/finish" class="btn btn-success">Fertig</a>
+                        <a href="/task/4/pause" class="btn btn-warning">Pausieren</a>
+                        <a href="/task/4/edit" class="btn btn-secondary">Edit</a>
+                        <a href="/task/4/delete" class="btn btn-danger">Löschen</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empty-state">
+                <p>Keine weiteren laufenden Tasks</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Floating Action Button -->
+<a href="/task/new" class="fab">+</a>
+
+</body>
+</html>

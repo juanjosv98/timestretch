@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timestretch - Time Overview</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<!-- Header -->
+<div class="header">
+    <div></div>
+    <h1>timestretch</h1>
+    <div class="menu-icon">☰</div>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+    <a href="/tasks" class="nav-link">← Zurück zu Tasks</a>
+
+    <!-- Completed Tasks Section -->
+    <h2 class="section-title">Fertige Tasks</h2>
+
+    <div class="completed-tasks-list">
+        <div class="task-item">
+            <div class="task-header">
+                <span class="task-title">Email schreiben</span>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="task-content">
+                <div class="time-log-entry">
+                    <div class="time-log-column">
+                        <div class="time-log-column-title">Gestartet am</div>
+                        <div class="time-log-entry-row">27.11.2025 09:00:00</div>
+                        <div class="time-log-entry-row">27.11.2025 14:30:00</div>
+                        <div class="time-log-entry-row">28.11.2025 10:15:00</div>
+                    </div>
+                    <div class="time-log-column">
+                        <div class="time-log-column-title">Beendet am</div>
+                        <div class="time-log-entry-row">27.11.2025 09:45:00</div>
+                        <div class="time-log-entry-row">27.11.2025 15:20:00</div>
+                        <div class="time-log-entry-row">28.11.2025 11:00:00</div>
+                    </div>
+                </div>
+                <div class="total-time">
+                    <div class="total-time-label">Totale Zeit</div>
+                    <div class="total-time-value">2h 30min</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="task-item">
+            <div class="task-header">
+                <span class="task-title">Kaffee holen</span>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="task-content">
+                <div class="time-log-entry">
+                    <div class="time-log-column">
+                        <div class="time-log-column-title">Gestartet am</div>
+                        <div class="time-log-entry-row">27.11.2025 12:00:00</div>
+                        <div class="time-log-entry-row">28.11.2025 15:30:00</div>
+                    </div>
+                    <div class="time-log-column">
+                        <div class="time-log-column-title">Beendet am</div>
+                        <div class="time-log-entry-row">27.11.2025 12:15:00</div>
+                        <div class="time-log-entry-row">28.11.2025 15:40:00</div>
+                    </div>
+                </div>
+                <div class="total-time">
+                    <div class="total-time-label">Totale Zeit</div>
+                    <div class="total-time-value">25min</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="task-item">
+            <div class="task-header">
+                <span class="task-title">Chef telefonieren</span>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="task-content">
+                <div class="time-log-entry">
+                    <div class="time-log-column">
+                        <div class="time-log-column-title">Gestartet am</div>
+                        <div class="time-log-entry-row">27.11.2025 16:00:00</div>
+                    </div>
+                    <div class="time-log-column">
+                        <div class="time-log-column-title">Beendet am</div>
+                        <div class="time-log-entry-row">27.11.2025 16:30:00</div>
+                    </div>
+                </div>
+                <div class="total-time">
+                    <div class="total-time-label">Totale Zeit</div>
+                    <div class="total-time-value">30min</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overall Time Worked Section -->
+    <div class="overall-time-section">
+        <h2 class="section-title" style="margin-top: 0;">Gesammte Geleistete Zeit</h2>
+        <div class="time-summary">
+            <div class="time-card">
+                <div class="time-card-label">Tag</div>
+                <div class="time-card-value">3h 15min</div>
+            </div>
+            <div class="time-card">
+                <div class="time-card-label">Woche</div>
+                <div class="time-card-value">30h 12min</div>
+            </div>
+            <div class="time-card">
+                <div class="time-card-label">Monat</div>
+                <div class="time-card-value">152h 37min</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
